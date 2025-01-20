@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    nav .logo .logo-text, nav ul.menu, nav .contact-us{
+        display: none;
+    }
+
+    nav .bars-icon{
+        display: block;
+        font-size: 3rem;
+    }
+}
