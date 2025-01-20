@@ -1,10 +1,32 @@
+@media screen and (max-width: 990px) {
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero-section .content .title {
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 40px;
+    }
+    .hero-section .content .descrip{
+        text-align: center;
+        font-size: 1.4rem !important;
+        margin: 15px 0;
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     nav .logo .logo-text, nav ul.menu, nav .contact-us{
         display: none;
     }
-
+    nav .logo img{
+        width: 45px;
+    }
     nav .bars-icon{
         display: block;
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 }

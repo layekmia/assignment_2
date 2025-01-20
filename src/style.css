@@ -50,9 +50,12 @@ body {
 }
 
 /* *====== Header nav section ================*/
+header{
+    height: 100vh;
+}
 
 nav {
-    padding-top: 15px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,19 +85,57 @@ ul.menu a {
   font-weight: 500;
 }
 
-ul.menu li:nth-child(1) a{
-    color: var(--orange-clr);
+ul.menu li:nth-child(1) a {
+  color: var(--orange-clr);
 }
-ul.menu li:nth-child(2) a{
-    color: var(--sky-blue-clr);
+ul.menu li:nth-child(2) a {
+  color: var(--sky-blue-clr);
 }
-ul.menu li:nth-child(3) a{
-    color: #05D4DF;
+ul.menu li:nth-child(3) a {
+  color: #05d4df;
 }
-ul.menu li:nth-child(4) a{
-    color: #5D58EF;
+ul.menu li:nth-child(4) a {
+  color: #5d58ef;
 }
 
-.bars-icon{
-    display: none;
+.bars-icon {
+  display: none;
+}
+
+/* *========= hero section ============*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section .content{
+    flex: 1;
+}
+.hero-section .content .title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+}
+
+.content .title .oragne{
+    color: var(--orange-clr);
+}
+.content .title .sky-blue{
+    color: var(--sky-blue-clr);
+}
+
+.hero-section .content .descrip {
+  margin: 20px 0;
+  color: var(--black-second-clr);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.hero-image img{
+    width: 100%;
+    max-height: 520px;
 }
