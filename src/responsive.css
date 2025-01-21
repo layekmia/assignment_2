@@ -1,3 +1,7 @@
+/**
+Note: I applied 4 breakpoint for more fexible , 
+*/
+
 @media screen and (max-width: 990px) {
   .hero-section {
     flex-direction: column-reverse;
@@ -13,7 +17,7 @@
   }
   .hero-section .content .descrip {
     text-align: center;
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
     margin: 15px 0;
   }
   .hero-section .content .descrip br {
@@ -21,48 +25,47 @@
   }
 
   /* *======== Our Stories section =========*/
-  .story-card .story-date , .big-story-card .big-story-date{
+  .story-card .story-date,
+  .big-story-card .big-story-date {
     width: 140px;
     height: 35px;
     bottom: 35%;
     left: 20px;
     font-size: 1.3rem;
   }
-  .big-story-card .big-story-date{
+  .big-story-card .big-story-date {
     top: 44%;
   }
-  .our-stoies-section .our-stories .left .big-story-card .story-title{
+  .our-stoies-section .our-stories .left .big-story-card .story-title {
     margin: 20px;
     font-size: 1.8rem;
   }
   .our-stoies-section .our-stories .left .big-story-card .story-details {
     padding: 0 30px 20px 20px;
   }
-  .our-stoies-section .our-stories .right .stories-cards .story-card .content{
+  .our-stoies-section .our-stories .right .stories-cards .story-card .content {
     padding: 20px;
-    p{
+    p {
       font-size: 1.2rem;
     }
   }
-
 }
 
-
-
 @media screen and (max-width: 768px) {
-    header .wrapper{
-        padding: 0;
-    }
-  nav{
+  header .wrapper {
+    padding: 0;
+  }
+  nav {
     background: #fff;
-   border-bottom: 1px solid var(--orange-clr);
-   padding: 10px 15px;
+    border-bottom: 1px solid var(--orange-clr);
+    padding: 10px 15px;
   }
   nav .logo .logo-text,
   nav ul.menu,
   nav .contact-us {
     display: none;
   }
+  
   nav .logo img {
     width: 45px;
   }
@@ -72,9 +75,10 @@
   }
 
   /* * curriculum section  */
-  .standard-curriculum{
+  .standard-curriculum {
     padding: 40px 15px 20px;
     background-position: -40px 40px;
+    background-size: contain;
   }
   .standard-curriculum .title {
     font-size: 2.4rem;
@@ -88,7 +92,7 @@
     padding: 30px 25px;
   }
 
-  .standard-curriculum .curriculum-card .content .heading{
+  .standard-curriculum .curriculum-card .content .heading {
     font-size: 2rem;
     margin-top: 20px;
   }
@@ -96,101 +100,109 @@
     margin: 20px 0;
   }
 
-  .slider-buttons{
+  .slider-buttons {
     display: none;
   }
 
   /* * Stories section */
 
-  .our-stoies-section{
+  .our-stoies-section {
     padding: 40px 0;
   }
 
-  .our-stoies-section .our-stories{
+  .our-stoies-section .our-stories {
     margin: 20px 0;
   }
-  .our-stoies-section .our-stories .left{
+  .our-stoies-section .our-stories .left {
     display: none;
   }
-  .our-stoies-section .our-stories .right{
+  .our-stoies-section .our-stories .right {
     flex-basis: 100%;
   }
 
-  .our-stoies-section .our-stories .right .stories-cards{
+  .our-stoies-section .our-stories .right .stories-cards {
     gap: 20px;
   }
-  .our-stoies-section .our-stories .right .stories-cards .story-card{
+  .our-stoies-section .our-stories .right .stories-cards .story-card {
     flex-basis: calc(50% - 10px);
     border-radius: 8px;
   }
-  .our-stoies-section .our-stories .right .stories-cards .story-card img{
+  .our-stoies-section .our-stories .right .stories-cards .story-card img {
     border-radius: 8px 8px 0 0;
   }
-  .our-stoies-section .our-stories .right .stories-cards .story-card .content{
+  .our-stoies-section .our-stories .right .stories-cards .story-card .content {
     padding: 40px;
   }
 
   .our-stoies-section
-  .our-stories
-  .right
-  .stories-cards
-  .story-card
-  .content
-  > p{
+    .our-stories
+    .right
+    .stories-cards
+    .story-card
+    .content
+    > p {
     font-size: 1.6rem;
     line-height: 20px;
   }
-  .story-card .story-date{
+  .story-card .story-date {
     /* display: none; */
     font-size: 1rem;
     bottom: 30%;
   }
 
-    /* * Footer section */
-  footer{
+  /* * Footer section */
+  footer {
     padding: 40px 0 60px;
   }
   footer .wrapper {
     flex-direction: column;
     gap: 30px;
   }
-  footer .footer-logo .logo  img{
+  footer .footer-logo .logo img {
     width: 70px;
   }
-  footer .footer-logo .logo .logo-text{
+  footer .footer-logo .logo .logo-text {
     font-size: 3.2rem;
   }
-  footer .footer-logo p{
+  footer .footer-logo p {
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width:576px) {
-  .our-stoies-section .our-stories .right .stories-cards{
+
+@media screen and (max-width: 600px) {
+  .our-stoies-section .our-stories .right .stories-cards {
     gap: 10px;
   }
-  .our-stoies-section .our-stories .right .stories-cards .story-card .content{
+  .our-stoies-section .our-stories .right .stories-cards .story-card .content {
     padding: 20px;
   }
 
-  .our-stoies-section .our-stories .right .stories-cards .story-card{
+  .our-stoies-section .our-stories .right .stories-cards .story-card {
     flex-basis: calc(50% - 5px);
   }
 
   .our-stoies-section
-  .our-stories
-  .right
-  .stories-cards
-  .story-card
-  .content
-  > p{
-    font-size: .85rem;
+    .our-stories
+    .right
+    .stories-cards
+    .story-card
+    .content
+    > p {
+    font-size: 0.85rem;
     line-height: 15px;
   }
 
-  .story-card .story-date{
+  .story-card .story-date {
     width: 100px;
     height: 20px;
+    bottom: 22%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .story-card .story-date{
     bottom: 36%;
   }
 }

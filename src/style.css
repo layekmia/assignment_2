@@ -76,9 +76,10 @@ nav ul.menu {
   gap: 32px;
 }
 
-ul.menu a {
+ul.menu li a {
   font-size: 1.9rem;
   font-weight: 500;
+  position: relative;
 }
 
 ul.menu li:nth-child(1) a {
@@ -94,6 +95,34 @@ ul.menu li:nth-child(4) a {
   color: #5d58ef;
 }
 
+/** nav hover effect */
+ul.menu li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 300ms ease;
+}
+ul.menu li:nth-child(1) a::after{
+  background: var(--orange-clr);
+}
+ul.menu li:nth-child(2) a::after{
+  background: var(--sky-blue-clr);
+}
+ul.menu li:nth-child(3) a::after{
+  background: #05d4df;
+}
+ul.menu li:nth-child(4) a::after{
+  background: #5d58ef;
+}
+
+ul.menu li a:hover::after{
+  width: 100%;
+}
+
+
 .bars-icon {
   display: none;
 }
@@ -102,7 +131,6 @@ ul.menu li:nth-child(4) a {
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .hero-section .content {
@@ -128,7 +156,6 @@ ul.menu li:nth-child(4) a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 22px;
-  text-align: left;
 }
 
 .hero-image img {
@@ -140,17 +167,19 @@ ul.menu li:nth-child(4) a {
 .marque marquee {
   background: #fff;
   padding: 5px 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   font-size: 1.4rem;
   margin-top: 20px;
 }
+
 
 /* * Standard curriculum */
 .standard-curriculum {
   padding: 60px 15px;
   background-image: url(../assets/bg.png);
   background-position: -150px 0px;
+  background-size: cover;
 }
 .standard-curriculum .title {
   text-align: center;
@@ -169,7 +198,7 @@ ul.menu li:nth-child(4) a {
   flex-basis: 32%;
   padding: 50px 40px;
   text-align: center;
-  border: 0.94px solid rgb(222, 245, 255);
+  border: 1px solid rgb(222, 245, 255);
   border-radius: 18.86px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 }
