@@ -365,3 +365,69 @@ ul.menu li:nth-child(4) a {
   left: 9%;
   background-color: #3cd8e8;
 }
+
+/* * Footer section */
+footer {
+  padding: 110px 0 150px;
+  background: var(--sky-blue-clr);
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-logo .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-logo .logo .logo-text {
+  color: var(--white-clr);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: left;
+}
+footer .footer-logo p {
+  max-width: 350px;
+  margin-top: 30px;
+  color: var(--white-clr);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+footer h2 {
+  color: var(--white-clr);
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+footer .footer-menu ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+footer .footer-menu ul a{
+  color: var(--white-clr);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+footer .social-section .social-links {
+  display: flex;
+  gap: 10px;
+}
+footer .social-section .social-links a{
+  width: 40px;
+  height: 40px;
+}
+
+
