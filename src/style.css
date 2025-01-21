@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --primary-clr: #000000;
   --secondary-clr: #202020;
@@ -50,10 +50,6 @@ body {
 }
 
 /* *====== Header nav section ================*/
-header{
-    height: 100vh;
-}
-
 nav {
   padding-top: 15px;
   display: flex;
@@ -109,8 +105,8 @@ ul.menu li:nth-child(4) a {
   justify-content: space-between;
 }
 
-.hero-section .content{
-    flex: 1;
+.hero-section .content {
+  flex: 1;
 }
 .hero-section .content .title {
   font-size: 5rem;
@@ -119,11 +115,11 @@ ul.menu li:nth-child(4) a {
   text-align: left;
 }
 
-.content .title .oragne{
-    color: var(--orange-clr);
+.content .title .oragne {
+  color: var(--orange-clr);
 }
-.content .title .sky-blue{
-    color: var(--sky-blue-clr);
+.content .title .sky-blue {
+  color: var(--sky-blue-clr);
 }
 
 .hero-section .content .descrip {
@@ -135,7 +131,111 @@ ul.menu li:nth-child(4) a {
   text-align: left;
 }
 
-.hero-image img{
-    width: 100%;
-    max-height: 520px;
+.hero-image img {
+  width: 100%;
+  max-height: 520px;
+}
+
+/* * ========== Marquee text  ======*/
+.marque marquee {
+  background: #fff;
+  padding: 5px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+/* * Standard curriculum */
+.standard-curriculum {
+  padding: 60px 15px;
+  background-image: url(../assets/bg.png);
+  background-position: -150px 0px;
+}
+.standard-curriculum .title {
+  text-align: center;
+  color: var(--primary-clr);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.standard-curriculum .curriculum-cards {
+  margin: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.standard-curriculum .curriculum-card {
+  flex-basis: 32%;
+  padding: 50px 40px;
+  text-align: center;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.standard-curriculum .curriculum-card:first-child{
+  background: linear-gradient(
+    180deg,
+    rgb(222, 245, 255),
+    rgba(255, 255, 255, 0) 40%
+  ),
+  rgb(255, 255, 255);
+}
+
+.standard-curriculum .curriculum-card:nth-child(2){
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.standard-curriculum .curriculum-card:last-child{
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.standard-curriculum .curriculum-card .card-image img {
+  max-width: 125px;
+}
+.standard-curriculum .curriculum-card .content .heading {
+  color: var(--secondary-clr);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+}
+.standard-curriculum .curriculum-card .content .details {
+  color: var(--extra-gray-white-clr);
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.standard-curriculum .curriculum-card .content a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.standard-curriculum .curriculum-card .content a.card-hyper-one{
+  color: var(--sky-blue-clr);
+}
+.standard-curriculum .curriculum-card .content a.card-hyper-two{
+  color: var(--orange-clr);
+}
+.standard-curriculum .curriculum-card .content a.card-hyper-three{
+  color: #8700FF;
+}
+
+
+.standard-curriculum .slider-buttons{
+  text-align: center;
+}
+.standard-curriculum .slider-buttons .slider-btn{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--orange-clr);
+  border:none;
+  font-size: 2.2rem;
+  color: white;
+  cursor: pointer;
+}
+.standard-curriculum .slider-buttons .slider-btn:first-child{
+  margin-right: 10px;
 }

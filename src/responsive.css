@@ -1,32 +1,76 @@
 @media screen and (max-width: 990px) {
-    .hero-section{
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 20px;
-    }
-    .hero-section .content .title {
-        text-align: center;
-        font-size: 3.2rem;
-        line-height: 40px;
-    }
-    .hero-section .content .descrip{
-        text-align: center;
-        font-size: 1.4rem !important;
-        margin: 15px 0;
-    }
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+  .hero-section .content .title {
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+  .hero-section .content .descrip {
+    text-align: center;
+    font-size: 1.4rem !important;
+    margin: 15px 0;
+  }
+  .hero-section .content .descrip br {
+    display: none;
+  }
 }
 
-
-
 @media screen and (max-width: 768px) {
-    nav .logo .logo-text, nav ul.menu, nav .contact-us{
-        display: none;
+    header .wrapper{
+        padding: 0;
     }
-    nav .logo img{
-        width: 45px;
-    }
-    nav .bars-icon{
-        display: block;
-        font-size: 2.7rem;
-    }
+  nav{
+    background: #fff;
+   border-bottom: 1px solid var(--orange-clr);
+   padding: 10px 15px;
+  }
+  nav .logo .logo-text,
+  nav ul.menu,
+  nav .contact-us {
+    display: none;
+  }
+  nav .logo img {
+    width: 45px;
+  }
+  nav .bars-icon {
+    display: block;
+    font-size: 2.7rem;
+  }
+
+  /* * curriculum section  */
+  .standard-curriculum{
+    padding: 40px 15px;
+    background-position: -40px 40px;
+  }
+  .standard-curriculum .title {
+    font-size: 2.4rem;
+  }
+
+  .standard-curriculum .curriculum-cards {
+    gap: 15px;
+  }
+  .standard-curriculum .curriculum-card {
+    flex-basis: 100%;
+    padding: 30px 25px;
+  }
+
+  .standard-curriculum .curriculum-card .content .heading{
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .standard-curriculum .curriculum-card .content .details {
+    margin: 20px 0;
+  }
+
+  .slider-buttons{
+    display: none;
+  }
+
+  /* * Stories section */
 }
